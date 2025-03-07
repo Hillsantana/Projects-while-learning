@@ -1,0 +1,110 @@
+header {
+    background: #fff1e4 radial-gradient(circle at center, #fff1e4, #925123);
+    position: relative;
+    border: 2px solid transparent;
+    padding: 10px;
+    text-align: center;
+}
+
+#logo {
+    width: 100px; /* Adjusted for better sizing */
+    height: auto;
+    position: relative;
+    padding: 1vw;
+}
+
+.titles {
+    text-shadow: 
+        -1px -1px 0 #fff1e4, /* Top-left shadow */
+        1px -1px 0 #fff1e4,  /* Top-right shadow */
+        -1px 1px 0 #fff1e4,  /* Bottom-left shadow */
+        1px 1px 0 #fff1e4;   /* Bottom-right shadow */
+    color: #925123;
+    font-size: 2rem;
+    margin: 10px 0;
+}
+
+body {
+    background-color: #fff1e4;
+    color: #925123;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    background-image: url('/Images/background.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: repeat;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-image {
+    border: 10px solid black;
+    max-width: 45%;
+    max-height: 45%;
+    object-fit: contain;
+    opacity: 50%;
+}
+
+.menu-section {
+    border: 2px dotted black;
+    margin: 20px;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+}
+
+.menu-item {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ebe0b1;
+    color: rgb(16, 15, 15);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    position: relative;
+    width: 60px;
+    border: 1px solid black;
+    margin: 5px;
+}
+
+.menu-item:hover {
+    transform: scale(1.1); /* Pop-out effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for emphasis */
+}
+
+.menu-item::after {
+    content: attr(data-description); /* Use the data-description attribute as content */
+    position: absolute;
+    bottom: 150%; /* Position above the span */
+    left: 100%;
+    transform: translateX(-50%);
+    padding: 5px 10px;
+    background-color: #333;
+    color: white;
+    border-radius: 4px;
+    font-size: 14px;
+    white-space: nowrap;
+    opacity: 0; /* Hide by default */
+    visibility: hidden;
+    transition: opacity 0.2s ease, visibility 0.2s ease;
+}
+
+.menu-item:hover::after {
+    opacity: 1; /* Show on hover */
+    visibility: visible;
+}
+
+.cart-section {
+    margin: 20px;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 2px dotted black;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: #925123;
+    color: #fff1e4;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
