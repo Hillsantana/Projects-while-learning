@@ -1,19 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Anteiku Order Online</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Anteiku - Ordena en Línea</title>
+    <meta name="description" content="Ordena los mejores smash burgers y cachapas en Anteiku. Disfruta de un menú exclusivo con entrega rápida.">
+    <meta name="keywords" content="cachapas, smash burgers, comida rápida, orden online, delivery">
+    <meta name="author" content="Anteiku">
+    <link rel="stylesheet" href="stylev2.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800">
+    <link rel="icon" type="image/png" href="Images/favicon.png">
 </head>
 <body>
     <header>
-        <img id="logo" src="./Images/logo2.png" alt="Company Logo">
+        <img id="logo" src="Images/logo2.png" alt="Anteiku Cafe Logo" loading="lazy">
         <h1 class="titles">Anteiku Cafe</h1>
     </header>
+    
     <p class="text">Bienvenidos, al momento de ordenar seleccione el artículo deseado y coloque sus datos, luego presione "Enviar".</p>
-
+    
     <h2 class="titles2">Menú</h2>
 
     <!-- Smash Burgers Section -->
@@ -21,54 +26,46 @@
         <h3 class="options">Smash Burgers</h3>
         <p id="item-desc">Carne de 6oz de Res, Tocino y queso cheddar americano</p>
         <p id="item-misc">Papas fritas tipo wedges o clásicas, según disponibilidad.</p>
-        <div class="menu-items">
-            <img class="menu-image" src="Images/bacon.JPG" alt="Bacon smash burger with good lightning and delicious"><br />
-            <div class="menu-item" onclick="addToCart('Smash Single', 330)" data-description="Smash burger con 1 carne de 8oz y queso americano">Smash Single  - RD$ 330</div>
-            <div class="menu-item" onclick="addToCart('Bacon Smash', 400)" data-description="1 carne de 6oz tipo smash, queso cheddar, bacon ahumado y papas fritas.">Bacon Smash  - RD$ 400</div>
-            <div class="menu-item" onclick="addToCart('BBQ Smash', 400)" data-description="1 carne de 6oz tipo smash, queso cheddar, bacon ahumado, salsa BBQ y papas fritas.">BBQ Smash  - RD$ 400</div>
-            <div class="menu-item" onclick="addToCart('Oklahoma Smash', 495)" data-description="2 carnes de 6oz tipo smash, queso cheddar, bacon ahumado, cebolla caramelizada y papas fritas.">Oklahoma Smash  - RD$ 495</div>
-            <div class="menu-item" onclick="addToCart('La GOLOSA', 550)" data-description="1 carne de 6oz tipo smash, queso cheddar, bacon ahumado, croqueta de mozzarella y papas fritas.">GOLOSA  - RD$ 550</div>
-        </div>
+        <img class="menu-image" src="Images/bacon.JPG" alt="Bacon smash burger" loading="lazy"><br>
+        <button class="menu-item" onclick="addToCart('Smash Single', 330)">Smash Single - RD$ 330</button>
+        <button class="menu-item" onclick="addToCart('Bacon Smash', 400)">Bacon Smash - RD$ 400</button>
+        <button class="menu-item" onclick="addToCart('BBQ Smash', 400)">BBQ Smash - RD$ 400</button>
+        <button class="menu-item" onclick="addToCart('Oklahoma Smash', 495)">Oklahoma Smash - RD$ 495</button>
+        <button class="menu-item" onclick="addToCart('La GOLOSA', 550)">GOLOSA - RD$ 550</button>
     </div>
 
     <!-- Cachapas Section -->
     <div class="menu-section">
         <h3 class="options">Cachapas</h3>
-        <div class="menu-items">
-            <img class="menu-image" src="Images/resmech.JPG" alt="Cachapa de res mechada en zoom"><br />
-            <div class="menu-item" onclick="addToCart('Queso', 300)" data-description="Disfruta de una generosa porción de queso mozzarella, para los verdaderos amantes del queso.">Queso  - RD$ 300</div>
-            <div class="menu-item" onclick="addToCart('4 Quesos', 330)" data-description="Un festín para los amantes del queso, con una combinación irresistible de hasta 4 deliciosos quesos.">4 Quesos  - RD$ 330</div>
-            <div class="menu-item" onclick="addToCart('Res Molida', 330)" data-description="Carne molida suculenta, bañada en una rica salsa de tomate, que te hará regresar por más.">Res Molida  - RD$ 330</div>
-            <div class="menu-item" onclick="addToCart('Pollo', 330)" data-description="Pechuga de pollo estilo fajita mexicana.">Pollo  - RD$ 330</div>
-            <div class="menu-item" onclick="addToCart('Pepperoni', 330)" data-description="Para los verdaderos fanáticos del pepperoni.">Pepperoni  - RD$ 330</div>
-            <div class="menu-item" onclick="addToCart('Res Mechada', 420)" data-description="Carne de res premium, cocida lentamente hasta la perfección, jugosa y sin una gota de grasa.">Res Mechada  - RD$ 420</div>
-            <div class="menu-item" onclick="addToCart('Agallua', 500)" data-description="Una fiesta de sabores con pollo, res molida, res mechada y pepperoni, todo en una sola cachapa que te dejará sin palabras.">Agallua  - RD$ 500</div>
-        </div>
+        <img class="menu-image" src="Images/resmech.JPG" alt="Cachapa de res mechada" loading="lazy"><br>
+        <button class="menu-item" onclick="addToCart('Queso', 300)">Queso - RD$ 300</button>
+        <button class="menu-item" onclick="addToCart('4 Quesos', 330)">4 Quesos - RD$ 330</button>
+        <button class="menu-item" onclick="addToCart('Res Molida', 330)">Res Molida - RD$ 330</button>
+        <button class="menu-item" onclick="addToCart('Pollo', 330)">Pollo - RD$ 330</button>
+        <button class="menu-item" onclick="addToCart('Pepperoni', 330)">Pepperoni - RD$ 330</button>
+        <button class="menu-item" onclick="addToCart('Res Mechada', 420)">Res Mechada - RD$ 420</button>
+        <button class="menu-item" onclick="addToCart('Agallua', 500)">Agallua - RD$ 500</button>
     </div>
 
     <!-- Smoothies Section -->
     <div class="menu-section">
         <h3 class="options">Smoothies</h3>
-        <div class="menu-items">
-            <img class="menu-image" src="Images/smoothie.jpg" alt="Smoothies"><br />
-            <div class="menu-item" onclick="addToCart('Smoothie Fresa', 150)" data-description="Batida de Fresa, helado de vainilla, leche y crema batida.">Smoothie Fresa  - RD$ 150</div>
-            <div class="menu-item" onclick="addToCart('Smoothie Limon', 150)" data-description="Batida de Limón, helado de vainilla, leche y crema batida.">Smoothie Limón  - RD$ 150</div>
-            <div class="menu-item" onclick="addToCart('Smoothie Berryblend', 170)" data-description="Batida de frutos del bosque, helado de vainilla, leche y crema batida.">Smoothie Berryblend  - RD$ 170</div>
-            <div class="menu-item" onclick="addToCart('Smoothie Chinola', 170)" data-description="Batida de Chinola, helado de vainilla, leche y crema batida.">Smoothie Chinola  - RD$ 170</div>
-        </div>
+        <img class="menu-image" src="Images/smoothie.jpg" alt="Smoothies" loading="lazy"><br>
+        <button class="menu-item" onclick="addToCart('Smoothie Fresa', 150)">Smoothie Fresa - RD$ 150</button>
+        <button class="menu-item" onclick="addToCart('Smoothie Limon', 150)">Smoothie Limón - RD$ 150</button>
+        <button class="menu-item" onclick="addToCart('Smoothie Berryblend', 170)">Smoothie Berryblend - RD$ 170</button>
+        <button class="menu-item" onclick="addToCart('Smoothie Chinola', 170)">Smoothie Chinola - RD$ 170</button>
     </div>
 
-    <!-- Cafes Section -->
-    <div class="menu-section">
-        <h3 class="options">Cafés</h3>
-        <div class="menu-items">
-            <img class="menu-image" src="Images/Latte.jpg" alt="Café"><br />
-            <div class="menu-item" onclick="addToCart('Capuccino', 100)" data-description="Espresso con granos de café de especialidad recién molidos y leche al vapor.">Capuccino  - RD$ 100</div>
-            <div class="menu-item" onclick="addToCart('Mocaccino', 110)" data-description="Espresso con granos de café de especialidad recién molidos, chocolate y leche al vapor.">Mocaccino  - RD$ 110</div>
-            <div class="menu-item" onclick="addToCart('Frappe', 150)" data-description="Licuado frozen de Espresso con café de especialidad recién molido y el sabor de su preferencia (caramelo, nutella o chocolate).">Frappe  - RD$ 150</div>
-            <div class="menu-item" onclick="addToCart('Ice Latte', 150)" data-description="Bebida fría de Espresso de café de especialidad, leche y el sabor de su preferencia (caramelo, nutella o chocolate).">Ice Latte  - RD$ 150</div>
-        </div>
-    </div>
+    <!-- Cafés Section -->
+<div class="menu-section">
+    <h3 class="options">Cafés</h3>
+    <img class="menu-image" src="Images/Latte.jpg" alt="Café" loading="lazy"><br>
+    <button class="menu-item" onclick="addToCart('Capuccino', 100)">Capuccino - RD$ 100</button>
+    <button class="menu-item" onclick="addToCart('Mocaccino', 110)">Mocaccino - RD$ 110</button>
+    <button class="menu-item" onclick="addToCart('Frappe', 150)">Frappe - RD$ 150</button>
+    <button class="menu-item" onclick="addToCart('Ice Latte', 150)">Ice Latte - RD$ 150</button>
+</div>
 
     <!-- Cart Section -->
     <div class="cart-section">
@@ -77,18 +74,20 @@
         <p><strong>Total: RD$ <span id="cart-total">0</span></strong></p>
         <form id="order-form" onsubmit="submitOrder(event)">
             <label for="name">Nombre:</label>
-            <input type="text" id="name" required><br>
+            <input type="text" id="name" placeholder="Tu nombre" required>
+            
             <label for="address">Dirección:</label>
-            <input type="text" id="address" required><br>
+            <input type="text" id="address" placeholder="Ej: Av. Principal #123" required>
+            
             <button type="submit">Confirmar Orden</button>
             <button type="button" onclick="resetCart()">Borrar Carrito</button>
         </form>
     </div>
 
     <footer>
-        <p>&copy; 2023 Anteiku Cafe. Todos los derechos reservados.</p>
+        <p>&copy; 2024 Anteiku Cafe. Todos los derechos reservados.</p>
     </footer>
 
-    <script src="./script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
